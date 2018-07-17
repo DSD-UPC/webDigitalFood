@@ -1,0 +1,26 @@
+
+
+
+.title{
+	height:30px;
+	/*background:rgba(169,3,41,1);*/
+	background: linear-gradient(to bottom, #990000 0%, #ff99cc 100%);
+	width:820px;
+	margin-bottom:7px;
+	
+	
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+.title text{
+	color:white;
+	font-weight:bold;
+	font-family:Courier New;
+	font-size:15px;	
+	
+	
+}

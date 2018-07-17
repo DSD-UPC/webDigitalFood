@@ -1,0 +1,25 @@
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+
+<div class="contain">
+
+     <div class="left">
+
+
+</div>
+
+<div class="right">
+
+
+</div>
+
+
+
+</body>
+
+</html>

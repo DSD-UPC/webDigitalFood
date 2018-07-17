@@ -1,0 +1,51 @@
+table{
+	
+	width:820px;
+	border-width:2px;
+border-color:#6db3f2;
+
+	
+}
+
+table .header{
+	
+	height:35px;
+	font-weight:bold;
+	text-align:center;
+}
+table tr td {
+	
+border: solid 1px #6db3f2;	
+}
+table .header td{
+	background: #1e5799;
+	color:white;
+	
+}
+
+table tr td img{
+	width:60px;
+   height:60px;	
+}
+
+ .celda_right{
+	
+	text-align:center;
+	vertical-align:middle;
+	
+}
+
+
+.img_delete{
+	
+   width:30px;
+   height:20px;
+ 
+}
+
+input{
+	
+	width:40px;
+	text-align:center;
+}
+

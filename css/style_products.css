@@ -1,0 +1,64 @@
+.contain{
+	
+	height:120px;
+	width:820px;
+	
+	
+	
+	
+	
+	
+        vertical-align: middle;
+        text-align: center; /* requerido para alineación horizontal */
+	     
+	
+	
+}
+
+
+.left img{
+	margin-top:7px;
+	
+ vertical-align:middle;
+ text-align:center;
+	
+	height:100px;
+	width:170px;
+	
+}
+
+
+ .left{
+	
+	height:115px;
+	width:300px;
+	float:left;
+
+	 
+}
+
+.right {
+	
+	height:115px;
+	float:right;
+	width:500px;
+	
+    float:right;
+	/*display:flex;*/
+	justify-content:left;
+	align-items:left;
+	
+}
+
+.right p{
+	margin: 10px 5px 5px 5px;
+	text-align:left;
+	/*font-family:Trebuchet MS;*/
+}
+
+.right #nomproduct{
+	color:#691e1e;
+	font-weight:bold;
+	
+	
+}

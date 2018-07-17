@@ -1,0 +1,54 @@
+<?
+
+     $codigo =1;
+	 $nomCategoria='POLLOS A LA BRASA';
+?>
+
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" href="css/style3.css">
+</head>
+<body >
+<center>
+<div class="title">
+<text>
+
+
+  <?=$nomCategoria ?>
+  
+  
+
+</text>
+
+</div>
+
+
+<center>
+<div class="contain">
+
+
+<div class="left">
+
+  
+  <img src="" >
+   
+
+</div>
+
+
+
+
+<div class="right" >
+<p style="margin-top:10x;" ><?=$DataProductos[$index]['descripcorta']?></p>
+
+</div>
+
+</center>
+
+
+
+</body>
+
+</html>
