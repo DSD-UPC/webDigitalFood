@@ -1,9 +1,13 @@
 <?php
 
+
+
      $codigo =$_GET['cod_categ'];
+	 
 	 $nomCategoria='POLLOS A LA BRASA';
 
-	$url = 'http://localhost:8088/api/ListarProductos/' . $codigo;
+	
+    $url = 'http://localhost:8092/producto/categoria/' . $codigo;
 
 $response = file_get_contents($url);
 	

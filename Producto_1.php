@@ -4,6 +4,7 @@
 <?php
 			
 include_once('conexion.php');
+
 	class Product extends Model{
 		public $code;
 		public $product;
@@ -51,7 +52,8 @@ public function getProductobyCodigo($codigo)
 	
 		 $nomCategoria='POLLOS A LA BRASA';
 	 
-	 	$url = 'http://localhost:8088/api/DetalleProducto/' . $codigo;
+	 	
+		$url = 'http://localhost:8092/producto/id/' . $codigo;
 
 		$response = file_get_contents($url);
 	

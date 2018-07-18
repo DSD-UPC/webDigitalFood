@@ -118,9 +118,15 @@
 				$html .= '<tr><td colspan ="6" ><p style="text-align=center;"> <center>No existen datos por mostrar</center></p></td></tr>';
 			}
 			
-			$html .= '</table><button  id="addProdut" class="boton_personalizado" >
+			$html .= '</table>"';
+			
+			
+			
+			if(!empty($this->cart)){
+			
+			$html .='<button  id="addProdut" class="boton_personalizado" onClick="LoadPedido();">
                         Guardar Pedido     </button>';
-	
+			}
 	    	return $html;
 	    }
 

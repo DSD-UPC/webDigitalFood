@@ -113,3 +113,34 @@
     
 	background-color:green;
   }
+  
+  
+  .div_mesa{
+	  padding:10px;
+	  margin-top:100px;
+	  width:500px;
+	  height:400px;
+	  background: linear-gradient(to bottom, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	  
+	  
+  }
+  
+  .div_mesa p {
+	  
+	  color:#3d429e;  
+	  font-size:25px;
+	  font-weight:bold;
+	  
+  }
+  
+  .div_mesa p1{
+	  
+	  font-weight:bold;
+  }
+  
+  .div_mesa select{
+	  width:150px;
+	  height:25px;
+	  
+	  
+  }

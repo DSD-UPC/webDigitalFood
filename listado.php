@@ -1,6 +1,13 @@
 <?php
 
-	$url = 'http://localhost:8088/api/categorias';
+
+		
+	
+
+	
+
+	$url = 'http://localhost:8090/categoria/findAll';
+	
 
 
 

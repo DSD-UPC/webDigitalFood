@@ -1,12 +1,19 @@
 
 
 <?php
+
  include_once('Producto_1.php');
  include_once('carrito.php');
-
+ include_once('MantPedido.php');
+$nro_mesa= $_SESSION['nro_mesa'];
+//echo $nro_mesa;
+ 
+ $usuario=$_SESSION['user'];
+ //echo $usuario;
  
  	$product = new Product();
 	$cart = new Cart();
+	$pedido = new Pedido();
 	
      
 	
@@ -19,12 +26,50 @@
 			case 'remove':
 				$cart->remove_item($_GET['code']);
 			break;
+			
+			case 'guardar':
+			    
+		    $fechaActual = date('d/m/Y H:i:s');
+   
+                $itemPedido = array(
+				"numcliente" => "454297990",
+				"nummesa" => $nro_mesa,
+				"fechpedido" => $fechaActual,
+				"estproceso" => 1,				
+				"estpedido" => 1,
+				"obspersonal" => "",
+				"fechupdpedido" => "",
+				"obscliente" => "",
+		        "codusuario" => $_SESSION['user']);
+				
+				//$data=>CrearCabeceraPedido($itemPedido);
+				
+				
+				$pedido ->CrearCabeceraPedido($itemPedido);
+	
+
+	
+	            
+				
+					
+				//$pedido->	guardar_detPedido()
+					
+					//echo "Datos guardados correctamente";
+					
+				
+				
+			break;    
+
+				
+              
+			
 		}
 	}
-	else{
-		
-		
-	}
+
+	
+
+	
+	
 	
 	 
 ?>

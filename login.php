@@ -8,8 +8,9 @@ if (isset($_POST['usuario']))
 	$usuario = $_POST['usuario'];
 	$password = $_POST['password'];
 
-	$url = 'http://localhost:8088/api/ValUsuario2';
-
+	//$url = 'http://localhost:8088/api/ValUsuario2';
+	
+$url = 'http://localhost:8085/usuario/login';
 	$data = array('codusuario'=>$usuario,
                 'password'=> $password
                 );
@@ -42,7 +43,9 @@ $codusuario = $DataUsuario["codusuario"];
 
 if ($codusuario <> ""){
 	
-	header('Location:listado.php');
+    session_start();
+	$_SESSION['user']=$DataUsuario["codusuario"];
+	header('Location:mesas.php');
 }
 
 // Print the date from the response
